@@ -1,9 +1,10 @@
 import React from "react";
+import { GifExpertApp } from "./gif-expert-app/gif-expert-app";
 
 export const App = () => {
   return (
     <>
-      <h1>Welcome to</h1>
+      <GifExpertApp />
     </>
   );
 };
