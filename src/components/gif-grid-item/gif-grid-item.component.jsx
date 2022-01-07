@@ -1,15 +1,14 @@
 import React from "react";
 
-export const GifGridItem = ({ id, title, url }) => {
-  console.log(url);
-
+export const GifGridItem = ({ title, url }) => {
   return (
-    <>
-      <li>
-        <span>{id}</span>
-        <p>{title}</p>
-        <img src={url} />
-      </li>
-    </>
+    <div className="col-6 flex-1">
+      <div className="card ">
+        <img src={url} className="card-img-top" alt={title} />
+        <div className="card-body">
+          <h5 className="card-subtitle">{title}</h5>
+        </div>
+      </div>
+    </div>
   );
 };

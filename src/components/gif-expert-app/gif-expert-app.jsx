@@ -6,11 +6,13 @@ import { Header } from "../header/header.component";
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState([]);
+
   return (
     <>
       <Header />
       <AddCategory setCategories={setCategories} />
       <GifGrid />
+
       <ol>
         {categories.map((item) => {
           return <GifGrid category={item} key={item} />;
