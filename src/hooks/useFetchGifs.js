@@ -7,7 +7,7 @@ export const useFetchGifs = (category) => {
     loading: true,
   });
   useEffect(() => {
-    getGifs().then((imgs) => {
+    getGifs(category).then((imgs) => {
       setTimeout(() => {
         console.log(imgs);
         setState({
